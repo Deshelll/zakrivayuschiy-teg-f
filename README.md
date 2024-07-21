@@ -1,1 +1,1 @@
-git@github.com:Deshelll/zakrivayuschiy-teg-f.git
+https://github.com/Deshelll/zakrivayuschiy-teg-f.git
