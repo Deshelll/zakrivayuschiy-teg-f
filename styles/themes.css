@@ -69,7 +69,7 @@
   --heart-contour: black;
   --heart-spark: #FF0000;
   --heart-hover: #000000;
-  --accent-color-floppy: white;
+  --accent-color-floppy: black;
 }
 
 @media (prefers-color-scheme: dark) {
