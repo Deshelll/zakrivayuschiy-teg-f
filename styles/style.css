@@ -152,6 +152,14 @@ button {
   height: 100%;
 }
 
+@supports ((text-stroke: 1px var(--accent-color-background)) or (-webkit-text-stroke: 1px var(--accent-color-background))) {
+  .image-label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--accent-color-background);
+    text-stroke: 1px var(--accent-color-background);
+  }
+}
+
 .content__card-title {
   font-size: 18px;
   font-weight: var(--font-weight-title);
@@ -321,7 +329,7 @@ button {
   margin: 52px auto 52px auto;
 }
 
-.save__button .button__text{
+.save__button .button__text {
   padding-top: 8px;
 }
 
