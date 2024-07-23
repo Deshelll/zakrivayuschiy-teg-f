@@ -85,7 +85,8 @@ button {
   transition-timing-function: ease;
   cursor: pointer;
   display: inline-block;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .theme-menu__button[disabled] {
@@ -114,7 +115,7 @@ button {
   background-color: var(--accent-color);
   opacity: 0;
   transition: transform 0.3s ease;
-  transform: scaleX(0);
+  transform: translateX(1);
   transform-origin: left;
 }
 
@@ -218,13 +219,13 @@ button {
   padding: 9px 0;
   text-align: center;
   cursor: pointer;
-  width: 130px;
   border: 2px solid var(--accent-color);
 }
 
 .card__like-button {
   position: relative;
   transition-duration: 0.3s;
+  width: 130px;
 }
 
 .card__like-button:focus {
@@ -235,7 +236,7 @@ button {
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
 
-.button::after {
+.content__card .button::after {
   content: '';
   position: absolute;
   background-color: var(--accent-color);
