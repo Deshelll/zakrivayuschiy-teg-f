@@ -196,7 +196,7 @@ button {
   line-height: 21px;
 }
 
-.content__card p:last-of-type{
+.content__card p:last-of-type {
   padding-top: 27px;
 }
 
@@ -208,15 +208,19 @@ button {
   padding: 25px;
 }
 
-/*.button__modal,*/
-.card__like-button {
-  position: relative;
+/*.button__modal,
+.card__like-button*/
+.button {
   background: none;
   padding: 9px 0;
   text-align: center;
   cursor: pointer;
   width: 130px;
   border: 2px solid var(--accent-color);
+}
+
+.card__like-button {
+  position: relative;
   transition-duration: 0.3s;
 }
 
