@@ -115,7 +115,7 @@ button {
   background-color: var(--accent-color);
   opacity: 0;
   transition: transform 0.3s ease;
-  transform: translateX(1);
+  transform: scaleX(0);
   transform-origin: left;
 }
 
@@ -212,19 +212,18 @@ button {
   padding: 25px;
 }
 
-/*.button__modal,
-.card__like-button*/
+/*.card__like-button*/
 .button {
   background: none;
   padding: 9px 0;
   text-align: center;
   cursor: pointer;
   border: 2px solid var(--accent-color);
+  position: relative;
+  transition: 0.5s ease-in-out;
 }
 
 .card__like-button {
-  position: relative;
-  transition-duration: 0.3s;
   width: 130px;
 }
 
@@ -236,7 +235,7 @@ button {
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
 
-.content__card .button::after {
+/*.content__card*/ .button::after {
   content: '';
   position: absolute;
   background-color: var(--accent-color);
@@ -258,6 +257,7 @@ button {
   mix-blend-mode: difference;
   z-index: 1;
 }
+
 
 .content__card img {
   inline-size: 100%;
@@ -358,6 +358,7 @@ button {
   padding: 0;
   background: none;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -366,13 +367,15 @@ button {
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--accent-color);
-  transition: 0.3s ease;
 }
 
 .floppy {
   width: 28px;
   height: 28px;
-  color: var(--accent-color-floppy);
+  position: relative;
+  color: var(--color-button-text);
+  mix-blend-mode: difference;
+  z-index: 1;
 }
 
 .save__button {
